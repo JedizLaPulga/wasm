@@ -30,30 +30,8 @@ Thumbs.db
 *.log
 .AppleDouble
 .LSOverride
-.env.local.*.php
 ehthumbs.db
 Desktop.ini
-
-# Node/NPM
-node_modules/
-package-lock.json
-yarn.lock
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment Variables
-.env
-.env.local
-.env.*.local
-
-# Build Output
-/build/
-/out/
-*.o
-*.a
-*.so
-*.dylib
 
 # Debugging
 .lldb
@@ -73,6 +51,5 @@ yarn-error.log*
 !.idea/runConfigurations/
 
 # Application specific
-.DS_Store
 **/.DS_Store
 *.orig
