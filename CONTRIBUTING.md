@@ -7,7 +7,7 @@ Thank you for your interest in contributing to this project! Here are some guide
 1. Fork the repository
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/<your-username>/wasm.git
+   git clone https://github.com/jedizlapulga/wasm.git
    cd wasm
    ```
 

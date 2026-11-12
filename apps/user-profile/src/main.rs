@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 use wasm_shared::components::*;
 
 fn main() {
-    dioxus_web::launch(app);
+    dioxus::LaunchBuilder::new().launch(app);
 }
 
 #[component]
@@ -29,7 +29,14 @@ fn app() -> Element {
                         style: "margin: 15px 0;",
                         p { "Name: {name}" }
                         p { "Email: {email}" }
-                        p { "Notifications: {if notifications_enabled() { \"Enabled\" } else { \"Disabled\" }}" }
+                        p {
+                            "Notifications: "
+                            if notifications_enabled() {
+                                "Enabled"
+                            } else {
+                                "Disabled"
+                            }
+                        }
                     }
                     
                     div {

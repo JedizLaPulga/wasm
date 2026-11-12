@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 use wasm_shared::components::*;
 
 fn main() {
-    dioxus_web::launch(app);
+    dioxus::LaunchBuilder::new().launch(app);
 }
 
 #[component]
@@ -24,7 +24,14 @@ fn app() -> Element {
                     style: "background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;",
                     h3 { "User Management" }
                     p { "Selected User: {selected_user}" }
-                    p { "Status: {if is_active() { \"Active\" } else { \"Inactive\" }}" }
+                    p {
+                        "Status: "
+                        if is_active() {
+                            "Active"
+                        } else {
+                            "Inactive"
+                        }
+                    }
                     
                     div {
                         Button {

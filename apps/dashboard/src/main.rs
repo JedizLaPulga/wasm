@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 use wasm_shared::components::*;
 
 fn main() {
-    dioxus_web::launch(app);
+    dioxus::LaunchBuilder::new().launch(app);
 }
 
 #[component]
