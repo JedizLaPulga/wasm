@@ -19,9 +19,9 @@ wasm/
 ├── Cargo.toml              # Workspace root - manages shared dependencies
 ├── Dioxus.toml             # Workspace Dioxus config (optional)
 ├── apps/                   # All independent applications
-│   ├── dashboard/          # First independent app
-│   ├── admin-panel/        # Second independent app
-│   └── user-profile/       # Third independent app
+│   ├── simulator/          # First independent app
+│   ├── document/        # Second independent app
+│   └── task/       # Third independent app
 ├── shared/                 # Shared library used by all apps
 │   └── src/
 │       ├── lib.rs          # Main library exports
@@ -38,15 +38,15 @@ Each app runs independently with its own development server:
 
 ```bash
 # Terminal 1: Dashboard
-cd apps/dashboard
+cd apps/simulator
 dx serve
 
 # Terminal 2: Admin Panel (in another terminal)
-cd apps/admin-panel
+cd apps/document
 dx serve
 
 # Terminal 3: User Profile (in another terminal)
-cd apps/user-profile
+cd apps/task
 dx serve
 ```
 
@@ -70,11 +70,11 @@ cargo test --workspace
 ### Production build for a specific app
 
 ```bash
-cd apps/dashboard
+cd apps/simulator
 dx build --release
 ```
 
-Output will be in `apps/dashboard/dist/`
+Output will be in `apps/simulator/dist/`
 
 ### Production build for all apps
 
@@ -91,10 +91,10 @@ done
 
 ```bash
 # Build specific app with Cargo
-cargo build --release -p dashboard
+cargo build --release -p simulator
 
 # Build all apps
-cargo build --release -p dashboard -p admin-panel -p user-profile
+cargo build --release -p simulator -p document -p task
 
 # Build shared library
 cargo build --release -p wasm-shared
@@ -177,9 +177,9 @@ Add the new app to the workspace members:
 ```toml
 [workspace]
 members = [
-    "apps/dashboard",
-    "apps/admin-panel",
-    "apps/user-profile",
+    "apps/simulator",
+    "apps/document",
+    "apps/task",
     "apps/my-new-app",  # Add this line
 ]
 ```
@@ -251,12 +251,12 @@ touch shared/src/new_module.rs
 Each app in `dist/` is ready to be served:
 
 ```bash
-# Build dashboard for production
-cd apps/dashboard
+# Build simulator for production
+cd apps/simulator
 dx build --release
 
 # Copy dist/ to your server
-scp -r dist/* user@server:/var/www/dashboard/
+scp -r dist/* user@server:/var/www/simulator/
 ```
 
 ### Deploy all apps

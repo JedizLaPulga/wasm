@@ -1,8 +1,8 @@
 [workspace]
 members = [
-    "apps/dashboard",
-    "apps/admin-panel",
-    "apps/user-profile",
+    "apps/simulator",
+    "apps/document",
+    "apps/task",
     "shared",
 ]
 resolver = "2"

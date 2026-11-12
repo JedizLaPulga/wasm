@@ -1,0 +1,6 @@
+[application]
+name = "Document"
+default_platform = "web"
+
+[web.app]
+title = "WASM - Document Application"

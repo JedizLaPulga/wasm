@@ -8,9 +8,9 @@ This project demonstrates a **workspace-based architecture** for building multip
 
 ### Applications Included
 
-- **Dashboard** (`apps/dashboard/`) - Analytics and metrics display
-- **Admin Panel** (`apps/admin-panel/`) - User and system management
-- **User Profile** (`apps/user-profile/`) - User profile and settings
+- **Simulator** (`apps/simulator/`) - Simulation and modeling application
+- **Document** (`apps/document/`) - Document management application
+- **Task** (`apps/task/`) - Task management application
 
 ### Shared Library
 
@@ -42,15 +42,15 @@ cargo install dioxus-cli
 wasm/
 ├── Cargo.toml                 # Workspace root configuration
 ├── apps/
-│   ├── dashboard/
+│   ├── simulator/
 │   │   ├── Cargo.toml
 │   │   ├── src/main.rs
 │   │   └── Dioxus.toml
-│   ├── admin-panel/
+│   ├── document/
 │   │   ├── Cargo.toml
 │   │   ├── src/main.rs
 │   │   └── Dioxus.toml
-│   └── user-profile/
+│   └── task/
 │       ├── Cargo.toml
 │       ├── src/main.rs
 │       └── Dioxus.toml
@@ -70,23 +70,23 @@ wasm/
 ### Run a specific app
 
 ```bash
-# Dashboard
-cd apps/dashboard
+# Simulator
+cd apps/simulator
 dx serve
 
-# Admin Panel
-cd apps/admin-panel
+# Document
+cd apps/document
 dx serve
 
-# User Profile
-cd apps/user-profile
+# Task
+cd apps/task
 dx serve
 ```
 
 ### Build specific app for production
 
 ```bash
-cd apps/dashboard
+cd apps/simulator
 dx build --release
 ```
 
@@ -95,7 +95,7 @@ The built artifacts will be in `dist/` within each app directory.
 ### Build all apps
 
 ```bash
-cargo build --release -p dashboard -p admin-panel -p user-profile
+cargo build --release -p simulator -p document -p task
 ```
 
 ## 📚 Documentation
@@ -114,7 +114,7 @@ cargo test --workspace
 
 Run tests for a specific app:
 ```bash
-cargo test -p dashboard
+cargo test -p simulator
 ```
 
 ## 🤝 Contributing

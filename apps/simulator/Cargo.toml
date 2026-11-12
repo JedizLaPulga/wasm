@@ -1,9 +1,9 @@
 [package]
-name = "admin-panel"
+name = "simulator"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
-description = "Admin Panel application - a Dioxus WASM app"
+description = "Simulator application - a Dioxus WASM app"
 repository.workspace = true
 license.workspace = true
 

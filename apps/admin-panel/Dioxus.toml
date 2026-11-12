@@ -1,6 +1,0 @@
-[application]
-name = "AdminPanel"
-default_platform = "web"
-
-[web.app]
-title = "WASM - Admin Panel Application"

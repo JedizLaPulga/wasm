@@ -1,9 +1,9 @@
 [package]
-name = "dashboard"
+name = "document"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
-description = "Dashboard application - a Dioxus WASM app"
+description = "Document application - a Dioxus WASM app"
 repository.workspace = true
 license.workspace = true
 

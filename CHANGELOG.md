@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Multiple independent Dioxus WASM applications via Cargo workspace
-- Three example applications: Dashboard, Admin Panel, User Profile
+- Three example applications: Simulator, Document, Task
 - Shared component library with reusable UI elements
 - Workspace-based dependency management
 - Individual Dioxus.toml configuration per app

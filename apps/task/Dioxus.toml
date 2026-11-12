@@ -1,0 +1,6 @@
+[application]
+name = "Task"
+default_platform = "web"
+
+[web.app]
+title = "WASM - Task Application"

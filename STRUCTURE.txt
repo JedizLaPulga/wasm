@@ -13,21 +13,21 @@ wasm/
 │
 ├── 📁 apps/ ............................... All independent applications
 │   │
-│   ├── 📁 dashboard/ ...................... Independent app #1
+│   ├── 📁 simulator/ ...................... Independent app #1
 │   │   ├── Cargo.toml ..................... App configuration
 │   │   ├── Dioxus.toml .................... App Dioxus settings
 │   │   ├── 📁 src/
 │   │   │   └── main.rs .................... App entry point
 │   │   └── 📁 dist/ ...................... Built output (generated)
 │   │
-│   ├── 📁 admin-panel/ .................... Independent app #2
+│   ├── 📁 document/ .................... Independent app #2
 │   │   ├── Cargo.toml
 │   │   ├── Dioxus.toml
 │   │   ├── 📁 src/
 │   │   │   └── main.rs
 │   │   └── 📁 dist/
 │   │
-│   └── 📁 user-profile/ ................... Independent app #3
+│   └── 📁 task/ ................... Independent app #3
 │       ├── Cargo.toml
 │       ├── Dioxus.toml
 │       ├── 📁 src/
@@ -82,10 +82,10 @@ wasm/
 ═══════════════════════════════════════════════════════════════════════════════
 
 # Run development server for specific app
-cd apps/dashboard && dx serve
+cd apps/simulator && dx serve
 
 # Build specific app for production
-cd apps/admin-panel && dx build --release
+cd apps/document && dx build --release
 
 # Run tests for all apps
 cargo test --workspace

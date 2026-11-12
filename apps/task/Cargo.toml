@@ -1,9 +1,9 @@
 [package]
-name = "user-profile"
+name = "task"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
-description = "User Profile application - a Dioxus WASM app"
+description = "Task application - a Dioxus WASM app"
 repository.workspace = true
 license.workspace = true
 

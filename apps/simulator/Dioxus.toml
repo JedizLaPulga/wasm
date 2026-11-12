@@ -1,0 +1,6 @@
+[application]
+name = "Simulator"
+default_platform = "web"
+
+[web.app]
+title = "WASM - Simulator Application"
