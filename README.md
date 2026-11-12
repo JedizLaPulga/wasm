@@ -1,3 +1,32 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                       🚀 WASM PROJECT 🚀                                       ║
+║                                                                                ║
+║              Multiple Independent Dioxus WebAssembly Applications              ║
+║                                                                                ║
+║  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐              ║
+║  │   SIMULATOR     │  │   DOCUMENT      │  │      TASK       │              ║
+║  │                 │  │                 │  │                 │              ║
+║  │  🎬 Modeling    │  │  📄 Management  │  │  ✓ Tracking     │              ║
+║  │  & Simulation   │  │  & Editing      │  │  & Management   │              ║
+║  │                 │  │                 │  │                 │              ║
+║  │  Fast. Secure.  │  │  Fast. Secure.  │  │  Fast. Secure.  │              ║
+║  │  Scalable.      │  │  Scalable.      │  │  Scalable.      │              ║
+║  └─────────────────┘  └─────────────────┘  └─────────────────┘              ║
+║                                                                                ║
+║                          ┌──────────────────┐                                 ║
+║                          │  SHARED LIBRARY  │                                 ║
+║                          │  Components &    │                                 ║
+║                          │  Utilities       │                                 ║
+║                          └──────────────────┘                                 ║
+║                                                                                ║
+║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
+║                                                                                ║
+║  Built with Rust | Dioxus Framework | WebAssembly                            ║
+║  Independent. Scalable. Production-Ready.                                     ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
 # WASM Project - Multiple Independent Dioxus Applications
 
 A workspace of multiple independent WebAssembly applications built with [Dioxus](https://dioxusjs.com/), a reactive UI framework for Rust.
