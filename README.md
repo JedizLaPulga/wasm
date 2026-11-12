@@ -1,31 +1,4 @@
-╔════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                ║
-║                       🚀 WASM PROJECT 🚀                                       ║
-║                                                                                ║
-║              Multiple Independent Dioxus WebAssembly Applications              ║
-║                                                                                ║
-║  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐              ║
-║  │   SIMULATOR     │  │   DOCUMENT      │  │      TASK       │              ║
-║  │                 │  │                 │  │                 │              ║
-║  │  🎬 Modeling    │  │  📄 Management  │  │  ✓ Tracking     │              ║
-║  │  & Simulation   │  │  & Editing      │  │  & Management   │              ║
-║  │                 │  │                 │  │                 │              ║
-║  │  Fast. Secure.  │  │  Fast. Secure.  │  │  Fast. Secure.  │              ║
-║  │  Scalable.      │  │  Scalable.      │  │  Scalable.      │              ║
-║  └─────────────────┘  └─────────────────┘  └─────────────────┘              ║
-║                                                                                ║
-║                          ┌──────────────────┐                                 ║
-║                          │  SHARED LIBRARY  │                                 ║
-║                          │  Components &    │                                 ║
-║                          │  Utilities       │                                 ║
-║                          └──────────────────┘                                 ║
-║                                                                                ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║                                                                                ║
-║  Built with Rust | Dioxus Framework | WebAssembly                            ║
-║  Independent. Scalable. Production-Ready.                                     ║
-║                                                                                ║
-╚════════════════════════════════════════════════════════════════════════════════╝
+![WASM Banner](./WASM_BANNER.png)
 
 # WASM Project - Multiple Independent Dioxus Applications
 
