@@ -1,0 +1,27 @@
+# Rust build output
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# WASM build output
+/dist/
+*.wasm
+*.wasm.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Development
+.env
+.env.local
+node_modules/
