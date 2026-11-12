@@ -1,0 +1,30 @@
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Dioxus
+/dist/
+/public/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# npm/node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
