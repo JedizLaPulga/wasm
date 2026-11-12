@@ -1,0 +1,6 @@
+[application]
+name = "Dashboard"
+default_platform = "web"
+
+[web.app]
+title = "WASM - Dashboard Application"

@@ -8,11 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup
-- Dioxus WASM framework integration
-- Basic project structure and configuration
+- Multiple independent Dioxus WASM applications via Cargo workspace
+- Three example applications: Dashboard, Admin Panel, User Profile
+- Shared component library with reusable UI elements
+- Workspace-based dependency management
+- Individual Dioxus.toml configuration per app
+- Shared utilities and components library
 
 ### Changed
+- Restructured from single app to workspace architecture
+- Updated Dioxus to 0.7
 
 ### Deprecated
 
@@ -32,5 +37,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `.gitignore` for Rust projects
 - Basic Cargo configuration
 
-[Unreleased]: https://github.com/<your-username>/wasm/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/<your-username>/wasm/releases/tag/v0.1.0
+[Unreleased]: https://github.com/JedizLaPulga/wasm/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/JedizLaPulga/wasm/releases/tag/v0.1.0

@@ -1,0 +1,18 @@
+[package]
+name = "user-profile"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "User Profile application - a Dioxus WASM app"
+repository.workspace = true
+license.workspace = true
+
+[dependencies]
+dioxus.workspace = true
+dioxus-web.workspace = true
+log.workspace = true
+wasm-bindgen.workspace = true
+wasm-shared.workspace = true
+
+[dev-dependencies]
+wasm-bindgen-test.workspace = true

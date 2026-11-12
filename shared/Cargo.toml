@@ -1,0 +1,12 @@
+[package]
+name = "wasm-shared"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "Shared components and utilities for WASM apps"
+repository.workspace = true
+license.workspace = true
+
+[dependencies]
+dioxus.workspace = true
+dioxus-web.workspace = true

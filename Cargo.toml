@@ -1,24 +1,28 @@
-[package]
-name = "wasm"
+[workspace]
+members = [
+    "apps/dashboard",
+    "apps/admin-panel",
+    "apps/user-profile",
+    "shared",
+]
+resolver = "2"
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
-description = "A WebAssembly project built with Dioxus"
-repository = "https://github.com/<your-username>/wasm"
-homepage = "https://github.com/<your-username>/wasm"
-documentation = "https://github.com/<your-username>/wasm"
+authors = ["Your Name <jedizlapulga@gmail.com>"]
+description = "Multiple independent Dioxus WASM applications"
+repository = "https://github.com/JedizLaPulga/wasm"
+homepage = "https://github.com/JedizLaPulga/wasm"
+documentation = "https://github.com/JedizLaPulga/wasm"
 license = "MIT"
-keywords = ["wasm", "dioxus", "web", "ui"]
-categories = ["wasm", "web-assembly"]
 
-[dependencies]
-dioxus = { version = "0.6", features = ["web"] }
-dioxus-web = "0.6"
+[workspace.dependencies]
+dioxus = { version = "0.7", features = ["web"] }
+dioxus-web = "0.7"
 log = "0.4"
 wasm-bindgen = "0.2"
-
-[dev-dependencies]
-wasm-bindgen-test = "1.3"
+wasm-shared = { path = "shared" }
 
 [profile.release]
 opt-level = "z"
